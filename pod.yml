@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: api-pod
+  labels:
+    run: connectApi
+spec:
+  containers:
+    - name: client
+      image: bharathjinka66/flask-api
+      ports:
+        - containerPort: 3000
